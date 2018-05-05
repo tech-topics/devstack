@@ -1,11 +1,11 @@
 # devstack
 My development stack
 
-This docker image is designed to represent as closely as possible 
-a stand-alone or virtual image of an oraclelinux development
-system with all the necessary development tools included.
+This repository contains the files necessary to build a development stack
+either on a physical or virtual host or inside a docker image.
 
 ## Development Tools:
+*	The lates t jdk.
 *	python 2.7 and 3.6
 * nodejs (latest available)
 * ruby (latest available)
