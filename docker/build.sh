@@ -16,4 +16,4 @@ docker build --force-rm=true --compress -q \
 	--build-arg https_proxy=http://www-proxy.us.oracle.com:80 \
 	--build-arg USERID=$USERID \
 	--build-arg GROUPID=$GID \
-	-t raikessecurity/devstack .
+	-t devstack .

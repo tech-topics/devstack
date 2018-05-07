@@ -11,11 +11,20 @@ ARG		GROUPID
 ## Update the base image:
 RUN		yum upgrade -y && \
 		yum install -y \
-	git \
-	vim \
-	mlocate \
-	sudo \
-	iputils
+			curl \
+			gcc-c++ \
+			make \
+			git \
+			vim \
+			mlocate \
+			sudo \
+			bind-utils \
+			iputils
+##	Install node.js 8:
+RUN		curl -sL https://rpm.nodesource.com/setup_8.x | bash && \
+		yum install -y nodejs
+
+##	setup some environment specific variables:
 COPY	.env	/etc/
 RUN		echo ". /etc/.env" >> /root/.bashrc
 
